@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 tips dom</title>
+  </head>
+  <body>
+    <!-- Script that logs a message and accesses a data attribute -->
+    <!-- Script que muestra un mensaje en la consola y accede a un atributo de datos -->
+    <script data-some="algo" id="myScript">
+      console.log("A message of happiness"); // Mensaje de felicidad
+      console.log(document.getElementById("myScript").dataset.some);
+      
+      for(i=0; i<3; i++){
+        console.log("a for "+i);
+      }
+    </script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
+<script>
+  // Retrieving all scripts in the document
+  // Obteniendo todos los scripts en el documento
+  var scripts = document.scripts;
+
+  // Modifying the value of data-some attribute
+  // Modificando el valor del atributo data-some
+  scripts[0].dataset.some = "something different"; // algo distinto
+
+  // Displaying the content of the first script tag
+  // Mostrando el contenido de la primera etiqueta script
+  console.log(scripts[0].text);
+
+  // Executing the script content using eval()
+  // Ejecutando el contenido del script usando eval()
+  eval(scripts[0].text);
+</script>
