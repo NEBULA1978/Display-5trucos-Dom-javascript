@@ -1,0 +1,32 @@
+Para seleccionar el primer hermano de un elemento específico en el DOM, puedes hacer uso de propiedades y métodos que permiten la navegación a través de los nodos.
+
+Si tienes un elemento padre y quieres seleccionar su primer hijo (es decir, el primer elemento hijo directo), puedes utilizar la propiedad firstElementChild. Aquí tienes un ejemplo:
+
+Supongamos que tienes un contenedor con el ID "container" y deseas seleccionar su primer hijo:
+
+HTML:
+
+html
+
+<div id="container">
+    <p>Primer elemento hijo</p>
+    <a href="#">Segundo elemento hijo</a>
+    <span>Tercer elemento hijo</span>
+</div>
+
+JavaScript:
+
+javascript
+
+// Selecciona el elemento padre por su ID
+let container = document.getElementById("container");
+
+// Selecciona el primer hijo del elemento padre
+let primerHermano = container.firstElementChild;
+
+// Aplicamos alguna modificación al primer hijo (solo para ejemplo)
+primerHermano.style.color = "red";
+
+En este caso, container.firstElementChild seleccionará el primer elemento hijo directo del contenedor con ID "container" y, en el ejemplo, cambiará el color del texto del primer hijo a rojo.
+
+Si necesitas seleccionar el primer hijo en general (sin importar si es un elemento, nodo de texto o comentario), puedes usar firstChild. Sin embargo, ten en cuenta que firstChild seleccionará el primer nodo hijo, lo que incluye también nodos de texto, comentarios o elementos, mientras que firstElementChild seleccionará el primer elemento hijo exclusivamente.

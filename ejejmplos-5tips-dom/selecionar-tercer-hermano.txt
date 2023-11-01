@@ -1,0 +1,32 @@
+Para seleccionar el tercer hermano de un elemento en el DOM, puedes seguir usando la propiedad nextElementSibling sobre el segundo hermano (segundo hijo del elemento padre) para acceder al tercer hermano. Aquí tienes un ejemplo continuando con el mismo HTML:
+
+Suponiendo:
+
+html
+
+<div id="container">
+    <p>Primer elemento hijo</p>
+    <a href="#">Segundo elemento hijo</a>
+    <span>Tercer elemento hijo</span>
+</div>
+
+Puedes seleccionar el tercer hermano con el siguiente código JavaScript:
+
+javascript
+
+// Selecciona el elemento padre por su ID
+let container = document.getElementById("container");
+
+// Selecciona el primer hijo del elemento padre
+let primerHermano = container.firstElementChild;
+
+// Selecciona el segundo hermano (segundo hijo del elemento padre)
+let segundoHermano = primerHermano.nextElementSibling;
+
+// Selecciona el tercer hermano (tercer hijo del elemento padre)
+let tercerHermano = segundoHermano.nextElementSibling;
+
+// Aplicamos alguna modificación al tercer hermano (solo para ejemplo)
+tercerHermano.style.color = "green";
+
+En este caso, tercerHermano representará el tercer hermano del contenedor "container" (en este caso, el <span>Tercer elemento hijo</span>). Y se realiza un cambio de color al texto del tercer hermano, en este caso, se cambia a verde.
