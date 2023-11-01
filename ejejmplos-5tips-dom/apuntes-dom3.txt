@@ -1,0 +1,65 @@
+1. Selección de elementos:
+
+javascript
+
+// Por ID
+const elementoPorId = document.getElementById('miElemento');
+
+// Por clase
+const elementosPorClase = document.getElementsByClassName('miClase');
+
+// Por selector
+const elementosPorSelector = document.querySelectorAll('.miSelector');
+
+// Por etiqueta
+const elementosPorEtiqueta = document.getElementsByTagName('div');
+
+2. Modificación de contenido:
+
+javascript
+
+// Cambiar el texto de un elemento
+elementoPorId.textContent = 'Nuevo texto';
+
+// Modificar HTML
+elementoPorId.innerHTML = '<strong>Nuevo</strong> contenido';
+
+3. Creación de elementos:
+
+javascript
+
+// Crear un nuevo elemento
+const nuevoElemento = document.createElement('div');
+
+// Agregar contenido al nuevo elemento
+nuevoElemento.textContent = '¡Hola Mundo!';
+
+// Agregar el nuevo elemento al DOM
+document.body.appendChild(nuevoElemento);
+
+4. Manipulación de clases CSS:
+
+javascript
+
+// Agregar una clase a un elemento
+elementoPorId.classList.add('claseNueva');
+
+// Eliminar una clase de un elemento
+elementoPorId.classList.remove('claseVieja');
+
+// Alternar una clase en un elemento
+elementoPorId.classList.toggle('claseActiva');
+
+5. Eventos:
+
+javascript
+
+// Agregar un evento click a un elemento
+elementoPorId.addEventListener('click', () => {
+  // Acciones a realizar cuando se haga click en el elemento
+});
+
+// Eliminar un evento
+elementoPorId.removeEventListener('click', nombreFuncion);
+
+Estos trucos te permiten seleccionar elementos, manipular su contenido, crear nuevos elementos, modificar estilos y añadir o eliminar eventos. Usarlos te ayudará a interactuar dinámicamente con tu página web utilizando JavaScript.
