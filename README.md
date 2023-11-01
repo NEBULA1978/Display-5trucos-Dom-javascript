@@ -1,5 +1,4 @@
 # Display-5trucos-Dom-javascript
-# Display-5trucos-Dom-javascript
 
 In the video, the following topics related to the display property in HTML and CSS are covered:
 
