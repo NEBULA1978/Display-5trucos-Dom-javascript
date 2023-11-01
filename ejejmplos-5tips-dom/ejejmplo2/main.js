@@ -1,4 +1,10 @@
-function changeType(element, type){
-    const input = document.getElementById(element);
-    input.type = type;
+let elementInit = document.getElementById("firstElement");
+
+while(elementInit){
+    document.getElementById("textResult").innerHTML += ` <p>
+        ${elementInit.nodeName}
+        ${elementInit.innerHTML}
+    </p>`
+
+    elementInit = elementInit.nextSibling;
 }
