@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Visualización</title>
+    <style>
+        /* Estilos para los diferentes tipos de visualización */
+
+        /* Display Block: Elementos dentro de una sección, uno por línea */
+        section {
+            display: block;
+        }
+        img {
+            display: block; /* o inline-block según tus necesidades */
+        }
+        div {
+            display: inline-block; /* Mostrado como inline-block para demostración */
+            border: 1px solid black; /* Borde para ilustrar el elemento */
+        }
+
+        /* Display Inline: Elementos en línea uno al lado del otro */
+        a, span {
+            display: inline;
+        }
+
+        /* Display Inline Block: Elementos aparecen en línea con características de bloque */
+        button, input {
+            display: inline-block;
+            border: 1px solid black; /* Bordes para resaltar los elementos */
+            margin: 5px; /* Margen para separación visual */
+        }
+    </style>
+</head>
+<body>
+    <!-- Display Block: Elementos aparecen uno debajo del otro -->
+    <section>
+        <img src="./rey_ataulfo.png"> <!-- Elemento de nivel bloque -->
+        <div></div> <!-- Elemento inline-block -->
+        <img src="./rey_ataulfo.png"> <!-- Elemento de nivel bloque -->
+    </section>
+
+    <!-- Display Inline: Elementos aparecen en línea -->
+    <a href="#">A</a>
+    <a href="#">BBB</a>
+    <span>C</span>
+
+    <!-- Display Inline Block: Elementos con características de bloque e inline -->
+    <button>Aceptar</button>
+    <input type="text">
+</body>
+</html>
