@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Display</title>
+        <style>
+        /* display por defecto block */
+        /* ocupan todo el ancho posible width:100%*/
+        /* ocupan solo el alto justo que necesitan */
+        /* no tienen ninguna separacion entre ellos */
+        /* se colocan uno debajo del otro siempre en columna */
+        
+        /* nav,h1,p,a,span,button,input{ */
+            /* border: 10px solid orange; */
+            /* background-color: bisque(255,255,255); */
+            /* width: 200px; */
+            /* sino pongo estan separadas */
+            /* margin: 2px; */
+            /* No afectan a inline solo a block */
+            /* quito para ver imagen bien */
+            /* height: 50px; */
+        /* } */
+        
+        nav{
+            display: flex;
+        }
+        a{
+            /* width: 200px; */
+            width: 25%;
+        }
+
+        div,img{
+            border: 1px solid black;
+
+        }
+        div{
+            display: inline-block;
+        }
+        /* Se pone debajo imagen */
+        /* img{
+            display: block;
+        } */
+        img:hover{
+            vertical-align: top;
+            visibility: hidden;
+        }
+        section{
+            display: flex;
+        }
+
+        h1:hover{
+            display: none;
+        }
+        /* caundo sea maximo 600px la pantalla navegador es decir de cero a 600px */
+        @media only screen and (max-width: 600px) {
+            nav{
+                flex-direction: column;
+            }
+            a:nth-child(1){
+                order: 1;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <!-- display block -->
+        <section>
+            <img src="../rey_ataulfo.png">
+            <!-- si pongo se separan un poco las imagenes -->
+            <div></div>
+            <img src="../rey_ataulfo.png">
+        </div>
+    </section>
+    <div>
+        <nav>
+            <a href="#">A</a>
+            <a href="#">BBB</a>
+            <a href="#">BBB2</a>
+            <a href="#">BBB3</a>
+        </nav>
+        <nav>
+            <a href="#">A</a>
+            <a href="#">BBB</a>
+            <a href="#">BBB2</a>
+            <a href="#">BBB3</a>
+        </nav>
+        <h1>C</h1>
+        <p>D</p>
+
+        <!-- display inline a,span,strong,b,...-->
+        <!-- ocupan estricta y exactamente el ancho justo que necesitan -->
+        <!-- si añado mas letras se hace mas grande -->
+        <!-- no se puede modificar ni el ancho ni el alto -->
+        <!-- tienen la altura justa y exacta que necesitan -->
+        <!-- siempre hay una separacion fija entre susu elementos -->
+        <!-- para acoratar un espacio ahora tienen dos tendria que juntar ababjo las etiquetas no tener separadas -->
+        <!-- 
+    <a href="#">A</a>
+    <a href="#">B</a> -->
+        <span>C</span>
+
+        <!-- displat  inline block -->
+        <!-- button,input,img,... -->
+        <!-- se les puede modificar cualquier propiedad -->
+        <!-- hay una separacion entre sus elementos -->
+        <!-- se colocan siempre en la misma fila uno a la derecha del otro,sino caben bajan a la linea de abajo -->
+
+        <button>Aceptar</button>
+        <input type="text">
+        <!-- <img src="../rey_ataulfo.png"> -->
+    </body>
+</html>
