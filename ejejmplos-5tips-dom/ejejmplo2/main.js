@@ -19,4 +19,9 @@ while (elementInit) {
     // utilizamos "nextElementSibling" en lugar de "nextSibling".
     // Esta alternativa solo recorre los elementos HTML, omitiendo los nodos de texto.
     elementInit = elementInit.nextElementSibling;
+//    Resumen: nos muestra el elemento que es y su contenido" es una descripción precisa y correcta de lo que hace el bloque de código en el bucle while.
+
+// El código itera a través de los elementos hermanos comenzando desde el elemento con el ID "firstElement" y, en cada iteración, agrega un párrafo al elemento con ID "textResult". Este párrafo contiene información sobre el tipo de elemento (nodeName) y su contenido (innerHTML) para cada elemento hermano.
+
+// En resumen, efectivamente, el código muestra el tipo de cada elemento y el contenido de esos elementos en el elemento con el ID "textResult". Por lo tanto, el comentario proporciona una descripción precisa de la funcionalidad del código.
 }
