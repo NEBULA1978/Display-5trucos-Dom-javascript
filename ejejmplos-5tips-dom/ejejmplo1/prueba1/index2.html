@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 tips dom</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        button, textarea {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Input con ID 'myText' para ser modificado -->
+    <div>
+        <input type="text" id="myText" value="mutante"> <br>
+    </div>
+
+    <div>
+        <!-- Botón para convertir a tipo 'button' -->
+        <button onclick="changeType('myText', 'button')">
+            Convertir a botón
+        </button>
+        <textarea id="code1" rows="10" cols="50" disabled>
+            // Código para el botón 'Convertir a botón'
+            function changeType(element, type) {
+                const input = document.getElementById(element);
+                input.type = type;
+            }
+        </textarea>
+    </div>
+
+    <div>
+        <!-- Botón para convertir a tipo 'text' -->
+        <button onclick="changeType('myText', 'text')">
+            Convertir a texto
+        </button>
+        <textarea id="code2" rows="10" cols="50" disabled>
+            // Código para el botón 'Convertir a texto'
+            function changeType(element, type) {
+                const input = document.getElementById(element);
+                input.type = type;
+            }
+        </textarea>
+    </div>
+
+    <div>
+        <!-- Botón para convertir a tipo 'checkbox' -->
+        <button onclick="changeType('myText', 'checkbox')">
+            Convertir a checkbox
+        </button>
+        <textarea id="code3" rows="10" cols="50" disabled>
+            // Código para el botón 'Convertir a checkbox'
+            function changeType(element, type) {
+                const input = document.getElementById(element);
+                input.type = type;
+            }
+        </textarea>
+    </div>
+
+    <div>
+        <!-- Botón para convertir a tipo 'color' -->
+        <button onclick="changeType('myText', 'color')">
+            Convertir a color
+        </button>
+        <textarea id="code4" rows="10" cols="50" disabled>
+            // Código para el botón 'Convertir a color'
+            function changeType(element, type) {
+                const input = document.getElementById(element);
+                input.type = type;
+            }
+        </textarea>
+    </div>
+
+    <script>
+        // Función para cambiar dinámicamente el tipo de input
+        function changeType(element, type) {
+            const input = document.getElementById(element);
+            input.type = type;
+        }
+    </script>
+</body>
+</html>
